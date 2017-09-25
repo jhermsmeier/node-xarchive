@@ -1,0 +1,39 @@
+{
+  "name": "xarchive",
+  "version": "0.0.0",
+  "description": "Extensible Archive Format",
+  "license": "MIT",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
+  "keywords": [
+    "xar",
+    "extensible",
+    "archive",
+    "compression",
+    "apple",
+    "xar!"
+  ],
+  "main": "lib/xar.js",
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "homepage": "https://github.com/jhermsmeier/node-xarchive",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhermsmeier/node-xarchive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-xarchive/issues"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
