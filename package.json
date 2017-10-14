@@ -17,7 +17,7 @@
     "htmlparser2": "^3.9.2"
   },
   "devDependencies": {
-    "mocha": "^3.5.3"
+    "mocha": "^4.0.1"
   },
   "peerDependencies": {},
   "optionalDependencies": {},
