@@ -18,6 +18,8 @@ $ npm install --save xarchive
 var xar = require( 'xarchive' )
 ```
 
+### Opening an Archive
+
 ```js
 var archive = new xar.Archive( 'something.xar' )
 
@@ -26,7 +28,37 @@ archive.open( function( error ) {
 })
 ```
 
+### Reading Directories
+
+```js
+archive.readdir( '/', ( error, ls ) => {
+  console.log( error || ls )
+})
+```
+
+```js
+[ 'file.txt', 'subdirectory' ]
+```
+
+### Reading Files
+
+**Reading an entire file:**
+
+```js
+archive.readFile( 'file.txt', function( error, buffer ) {
+  // ...
+})
+```
+
+**Streaming from a file:**
+
+```js
+var readableStream = archive.createReadStream( 'file.txt' )
+```
+
 ## References
 
-- [mackyle/xar](https://github.com/mackyle/xar/wiki/xarformat)
+- [mackyle/xar/wiki](https://github.com/mackyle/xar/wiki/xarformat)
 - [Wikipedia/xar](https://en.wikipedia.org/wiki/Xar_%28archiver%29)
+- [opensource.apple.com/source/xar](https://opensource.apple.com/source/xar/)
+- [code.google.com/archive/p/xar](https://code.google.com/archive/p/xar/)
