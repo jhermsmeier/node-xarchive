@@ -14,10 +14,10 @@
   ],
   "main": "lib/xar.js",
   "dependencies": {
-    "htmlparser2": "^3.9.2"
+    "htmlparser2": "^3.10.0"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^5.2.0"
   },
   "peerDependencies": {},
   "optionalDependencies": {},
